@@ -1,0 +1,118 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: rgb(242, 234, 220);
+    color: blue;
+    margin    : 2%;
+}
+
+/* header */
+.header-container {
+    width        : 1000px;
+    height       : 60px;
+    padding      : 10px 10px 10px 10px;
+    margin-left: 10px;
+    background   : blue;
+    border-radius: 4px;
+    box-shadow   : 2px 2px 2px blueviolet;
+    margin-bottom: 10px;
+}
+
+.header-title {
+    color: whitesmoke;
+
+}
+
+.header-text {
+    color: whitesmoke;
+}
+
+/* form */
+input,
+select,
+textarea,
+button,
+fieldset {
+    border       : 1px solid blue;
+    border-radius: 4px;
+    padding      : 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+button,
+fieldset {
+    box-shadow: 2px 2px 2px blueviolet;
+}
+
+input:focus, textarea:focus{
+    background: lightgoldenrodyellow;
+}
+
+.form-field-container{
+    width: 1000px;
+    display: flex;
+    align-items: left;
+}
+
+.form-field-container label{
+    display: block;
+    margin-left: 10px;
+
+}
+
+#choose{
+    width: 1000px;
+}
+
+
+.form-text-area label{
+    display: block;
+    margin-left: 10px;
+}
+
+/* button */   
+button, select{
+    cursor: pointer;
+}
+
+.form-button[type="submit"] {
+    font-size: 1.2em;
+    background: blue;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.form-button[type="reset"] {
+    font-size: 1.2em;
+    background: blue;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    
+}
+
+.form-button:hover{
+    background: cornflowerblue;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* footer */
+

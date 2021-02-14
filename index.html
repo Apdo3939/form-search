@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <media="screen">
+        <title>Formulario</title>
+</head>
+
+<body>
+
+    <div class="header-container">
+        <h3 class="header-title">Pesquisa</h3>
+        <p class="header-text">Complete as suas informações referente as tecnolgias mais usadas.</p>
+    </div>
+
+    <form action="">
+        <fieldset class="form-field-container">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <fieldset class="form-field-container">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" required>
+            </div>
+        </fieldset>
+
+        <fieldset id="choose">
+            <div>
+                <label for="">Qual é o seu tipo de desenvolvedor?</label>
+                <label for="">
+                    <input type="radio" name="dev" value="backend" checked>Back-end
+                </label>
+                <label for="">
+                    <input type="radio" name="dev" value="frontend">Front-end
+                </label>
+                <label for="">
+                    <input type="radio" name="dev" value="fullstack">FullStack
+                </label>
+                <label for="">
+                    <input type="radio" name="dev" value="desktop">Desktop
+                </label>
+                <label for="">
+                    <input type="radio" name="dev" value="mobile">Mobile
+                </label>
+            </div>
+
+            <div class="form-select">
+                <label for="experiencia">Experiência em programação</label>
+                <select name="experiencia" id="experiencia">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="">Sem experiência</option>
+                    <option value="">Junior</option>
+                    <option value="">Pleno</option>
+                    <option value="">Senior</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label for="tec">Selecione as tecnologias que usa:</label><br><br>
+                <input type="checkbox" name="tec1" id="tec1" value="html">
+                <label for="tec1">HTML</label>
+                <input type="checkbox" name="tec2" id="tec2" value="css">
+                <label for="tec2">CSS</label>
+                <input type="checkbox" name="tec3" id="tec3" value="javascript">
+                <label for="tec3">JAVASCRIPT</label>
+                <input type="checkbox" name="tec4" id="tec4" value="typescript">
+                <label for="tec4">TYPESCRIPT</label>
+                <input type="checkbox" name="tec5" id="tec5" value="java">
+                <label for="tec5">JAVA</label>
+                <input type="checkbox" name="tec6" id="tec6" value="c#">
+                <label for="tec6">C#</label>
+                <input type="checkbox" name="tec7" id="tec7" value="python">
+                <label for="tec7">PYTHON</label>
+
+            </div>
+        </fieldset>
+        <fieldset class="form-field-container">
+            <div class="form-text-area">
+                <br>
+                <label for="exp-text">Conte sua experiência</label>
+                <textarea name="exp-text" id="exp-text" cols="30" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <button class="form-button" type="submit">Concluído</button>
+        <button class="form-button" type="reset">Limpar</button>
+    </form>
+
+</body>
+
+</html>
